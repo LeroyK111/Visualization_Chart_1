@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>数据可视化展板vw+flex布局</title>
+    <link rel="stylesheet" href="./css/index.css" />
+  </head>
+  <body class="body-bg">
+    <header>
+      <h1>数 据 可 视 化 展 板</h1>
+      <div class="showtime"></div>
+    </header>
+    <section class="mainbox">
+      <div class="column">
+        <!-- 创建父容器 -->
+        <div class="panel">
+          <div class="panel-footer">
+            <!-- 原生标题title不好用，推荐自写 -->
+            <h3 class="left-title">商品销售展示</h3>
+            <!-- 柱形图 -->
+            <div id="left1" class="left-item"></div>
+          </div>
+        </div>
+        <div class="panel">
+          <div class="panel-footer">
+            <!-- 空心饼图-->
+            <div id="left2" class="left-item"></div>
+          </div>
+        </div>
+        <div class="panel">
+          <div class="panel-footer">
+            <!-- 雷达热点 -->
+            <div id="left3" class="left-item"></div>
+          </div>
+        </div>
+      </div>
+      <div class="column">
+        <!-- 仪表 -->
+        <div class="boxtext">
+          <h2>今日访客数量</h2>
+          <div id="visitors" class="visitors">42</div>
+        </div>
+        <div class="bigbox">
+          <h1>公司全球业务</h1>
+          <!-- 地图区域 -->
+          <div id="bigEarth" class="bigEarth"></div>
+        </div>
+      </div>
+      <div class="column">
+        <!-- 创建父容器 -->
+        <div class="panel">
+          <div class="panel-footer">
+            <!-- 右一折线 -->
+            <div id="right1" class="left-item"></div>
+          </div>
+        </div>
+        <div class="panel">
+          <div class="panel-footer">
+            <h3 class="left-title">热度指数</h3>
+            <!-- 右二旭日图 -->
+            <div id="right2" class="left-item"></div>
+          </div>
+        </div>
+        <div class="panel">
+          <div class="panel-footer">
+            <h3 class="left-title">饮水指南</h3>
+            <!-- 人体数据 -->
+            <div id="right3" class="left-item"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </body>
+  <!-- 测试一下其他组件 -->
+  <script src="./js/index.js" type="module"></script>
+</html>

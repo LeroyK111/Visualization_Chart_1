@@ -1,0 +1,20 @@
+{
+  "name": "nativejsdev",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "start": "nodemon ./server.js",
+    "test": "tsc ./server.ts"
+  },
+  "keywords": [
+    "test",
+    "start"
+  ],
+  "author": "LeroyK <bridieiybnf@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "axios": "^0.27.2",
+    "d3-array": "^3.2.0",
+    "d3-geo": "^3.0.1"
+  }
+}
