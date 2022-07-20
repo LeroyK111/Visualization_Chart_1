@@ -12,11 +12,15 @@ a {
   text-decoration: none;
 }
 
-// 默认适配1920 x 1080的屏幕
-
-.body-bg {
+html {
+  // 修改成宽屏
+  min-width: 3000px;
+  height: 2000px;
   background: radial-gradient(rgba(50, 0, 230, 0.9), rgba(3, 0, 63, 1))
     no-repeat;
+}
+
+.body-bg {
   color: #fff;
 }
 
@@ -42,7 +46,6 @@ header {
 
 // 本体盒子
 .mainbox {
-  min-width: 1080px;
   margin: 0 auto;
   padding: 0.5208vw 0.5208vw 0;
   display: flex;
@@ -179,7 +182,6 @@ header {
         font-size: 5vw;
         text-align: center;
         overflow: hidden;
-        
       }
     }
     .bigbox {
@@ -196,10 +198,9 @@ header {
       }
       .bigEarth {
         flex: 8;
-        width: 100%;    
+        width: 100%;
       }
     }
-    
   }
 }
 
